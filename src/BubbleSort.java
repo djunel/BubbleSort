@@ -14,7 +14,7 @@ public class BubbleSort {
         /* define constants */
         static long MAXVALUE =  2000000000;
         static long MINVALUE = -2000000000;
-        static int numberOfTrials = 50;
+        static int numberOfTrials = 100;
         static int MAXINPUTSIZE  = (int) Math.pow(1.5,28);
         static int MININPUTSIZE  =  1;
         // static int SIZEINCREMENT =  10000000; // not using this since we are doubling the size each time
@@ -31,12 +31,12 @@ public class BubbleSort {
 
             // run the whole experiment at least twice, and expect to throw away the data from the earlier runs, before java has fully optimized
 
-            /*System.out.println("Running first full experiment...");
+            System.out.println("Running first full experiment...");
             runFullExperiment("bubbleSort-Exp1-ThrowAway.txt");
             System.out.println("Running second full experiment...");
             runFullExperiment("bubbleSort-Exp2.txt");
             System.out.println("Running third full experiment...");
-            runFullExperiment("bubbleSort-Exp3.txt");*/
+            runFullExperiment("bubbleSort-Exp3.txt");
         }
 
         static void runFullExperiment(String resultsFileName){
